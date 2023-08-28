@@ -1,0 +1,22 @@
+{
+	"compilerOptions": {
+		"lib": [
+			"ES2022"
+		],
+		"target": "es2021",
+		"module": "es2020",
+		"strict": true,
+		"esModuleInterop": true,
+		"outDir": "dist",
+		"rootDir": "src", //if removed we'll get ./dist/src/index.js, now we get ./dist/index.js
+		"inlineSourceMap": true,
+		"moduleResolution": "node",
+	},
+	"include": [
+		"src/**/*.ts"
+	],
+	"exclude": [
+		"node_modules",
+		"dist"
+	]
+}
