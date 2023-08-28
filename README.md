@@ -1,7 +1,10 @@
 # webpack-html-file-injector
-A simple webpack loader plugin which replaces a tag in an html file with the contents of another html file. This enables the creating a single large index.html file from multiple component.html files. So if you have these 3 files:
+A simple webpack loader plugin which replaces a tag in an html file with the contents of another html file. Using this you can easily create a single large index.html file from multiple component.html files. 
 
-#### **`src/index.html`**
+## Example
+If you have these 3 files:
+
+**`src/index.html`**
 ```html
 <!DOCTYPE html>
 <html>
@@ -17,14 +20,14 @@ A simple webpack loader plugin which replaces a tag in an html file with the con
 </html>
 ``` 
 
-#### **`src/nav.html`**
+**`src/nav.html`**
 ```html
 <div id='navbar'>
   <div>Home</div>
 </div>
 ```
 
-#### **`src/main.html`**
+**`src/main.html`**
 ```html
 <h1>Welcome</h1>
 <p>Let's build a great website</p>
@@ -32,7 +35,7 @@ A simple webpack loader plugin which replaces a tag in an html file with the con
 
 You can output this file:
 
-#### **`dist/index.html`**
+**`dist/index.html`**
 ```html
 <!DOCTYPE html>
 <html>
@@ -50,3 +53,19 @@ You can output this file:
 </body>
 </html>
 ``` 
+
+## Installation & Usage
+First install this to your project as per usual:
+```
+$ npm install webpack-html-file-injector
+```
+
+
+
+## Development
+
+### Publish to npm
+To publish a new version to npm run:
+```
+
+```
